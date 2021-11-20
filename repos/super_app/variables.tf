@@ -1,5 +1,5 @@
 variable "repository_name" {
-  type        = "super-app"
+  default     = "super-app"
 }
 
 variable "description" {
@@ -8,4 +8,12 @@ variable "description" {
 
 variable "default_branch" {
   default     = "master"
+}
+
+variable "profile" {
+  default = "default"
+}
+
+variable "region" {
+  default = "eu-central-1"
 }

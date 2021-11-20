@@ -33,6 +33,6 @@ variable "ingress_rules" {
       ingress_description = "HTTPS access from admin home"
       protocol = "tcp"
       cidr_blocks = ["80.221.36.234/32"]
-    },
+    }
   ]
 }
