@@ -32,7 +32,7 @@ data "aws_security_group" "sg" {
 }
 
 module "centos" {
-  source = "git@github.com:igorgolm/dev-demo-modules.git//instance/eu-central-1/ubuntu-kube?ref=v0.0.9"
+  source = "git@github.com:igorgolm/dev-demo-modules.git//instance/eu-central-1/ubuntu-kube-proxy?ref=v0.0.10"
 
   region                 = var.region
   name                   = var.name

@@ -1,5 +1,5 @@
 variable "name" {
-  default = "demo-kube"
+  default = "demo-kube-proxy"
 }
 
 variable "root_vsize" {
