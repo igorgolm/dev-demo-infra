@@ -25,7 +25,7 @@ variable "ingress_rules" {
       to_port   = 22
       ingress_description = "Allow SSH access from admin home"
       protocol = "tcp"
-      cidr_blocks = ["80.221.36.234/32"]
+      cidr_blocks = ["80.221.36.234/32", "185.40.89.15/32"]
     }
   ]
 }

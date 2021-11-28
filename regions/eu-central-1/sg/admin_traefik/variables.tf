@@ -3,7 +3,7 @@ variable "region" {
 }
 
 variable "name" {
-  default = "ADMIN_K8S_API"
+  default = "ADMIN_TRAEFIK"
 }
 
 variable "profile" {
@@ -11,7 +11,7 @@ variable "profile" {
 }
 
 variable "description" {
-  default = "Rules for admin K8S API access"
+  default = "Rules for admin Traefik dashboard access"
 }
 
 variable "environment" {
@@ -21,9 +21,9 @@ variable "environment" {
 variable "ingress_rules" {
   default = [
     {
-      from_port = 6443
-      to_port   = 6443
-      ingress_description = "Access to k8s API"
+      from_port = 8080
+      to_port   = 8080
+      ingress_description = "Traefik access from admin home"
       protocol = "tcp"
       cidr_blocks = ["80.221.36.234/32", "185.40.89.15/32"]
     }
